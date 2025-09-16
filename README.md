@@ -17,7 +17,6 @@ A modern, multi-tenant Shopify analytics dashboard built with Next.js and Node.j
 
 **Admin Access:**
 - **Email:** `abhi.admin@shopify-insights.com`
-- **Password:** `admin123`
 
 **Store Owner Access:**
 - **Shop 1:** `xeno-multi-tenant-demo.myshopify.com`
