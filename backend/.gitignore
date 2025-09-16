@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.backend
+.env.production
+
+# Database
+*.db
+*.sqlite
+dev.db
+
+# Generated files
+/generated/
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test-*.js
+*-test.js
+debug-*.js
+check-*.js
+setup-*.js
+cleanup-*.js

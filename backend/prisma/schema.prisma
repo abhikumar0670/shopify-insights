@@ -1,0 +1,86 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tenant {
+  id          Int        @id @default(autoincrement())
+  shop        String     @unique // e.g., "my-cool-store.myshopify.com"
+  accessToken String
+  createdAt   DateTime   @default(now())
+
+  // Relations
+  customers   Customer[]
+  products    Product[]
+  orders      Order[]
+  users       User[]     // Users who can access this tenant
+}
+
+model User {
+  id          Int      @id @default(autoincrement())
+  email       String   @unique
+  passwordHash String?  // For future password authentication
+  role        Role     @default(STORE_OWNER)
+  createdAt   DateTime @default(now())
+  lastLogin   DateTime?
+
+  // Store owners are linked to specific tenant
+  tenantId    Int?
+  tenant      Tenant?  @relation(fields: [tenantId], references: [id])
+  
+  // Metadata
+  firstName   String?
+  lastName    String?
+  isActive    Boolean  @default(true)
+}
+
+enum Role {
+  STORE_OWNER   // Can only access their specific store data
+  ADMIN         // Can access all stores for monitoring
+  SUPER_ADMIN   // Full system access + user management
+}
+
+model Customer {
+  id        String   @id // use Shopify's customer ID
+  email     String?  
+  firstName String?
+  lastName  String?
+  createdAt DateTime @default(now())
+
+  tenantId  Int
+  tenant    Tenant   @relation(fields: [tenantId], references: [id])
+
+  orders    Order[]
+}
+
+model Product {
+  id          String   @id // Shopify's product ID
+  title       String
+  vendor      String?  // Add vendor field (optional)
+  price       Float
+  createdAt   DateTime @default(now())
+
+  tenantId    Int
+  tenant      Tenant   @relation(fields: [tenantId], references: [id])
+}
+
+model Order {
+  id          String   @id // Shopify's order ID
+  totalPrice  Float
+  createdAt   DateTime
+
+  tenantId    Int
+  tenant      Tenant   @relation(fields: [tenantId], references: [id])
+
+  customerId  String?
+  customer    Customer? @relation(fields: [customerId], references: [id])
+}
