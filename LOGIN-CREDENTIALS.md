@@ -90,4 +90,4 @@ These are **demo credentials** for evaluation purposes only. Each role demonstra
 
 ---
 
-*Built with ❤️ for modern e-commerce analytics*
+*Built for modern e-commerce analytics*
