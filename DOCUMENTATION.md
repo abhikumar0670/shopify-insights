@@ -4,7 +4,7 @@
 A multi-tenant Shopify data ingestion and analytics platform that enables enterprise retailers to onboard, integrate, and analyze their customer data with real-time insights and comprehensive dashboards.
 
 ## Live Deployment
-- **Frontend Dashboard**: https://frontend-qq49vrlvt-abhishek-kumars-projects-1de91d80.vercel.app
+- **Frontend Dashboard**: https://shopify-insights-eight.vercel.app/
 - **Backend API**: https://shopify-insights-production.up.railway.app
 
 ## Assumptions Made
@@ -201,23 +201,23 @@ model Product {
 
 ## Key Features Implemented
 
-### ✅ Multi-Tenant Architecture
+###  Multi-Tenant Architecture
 - Complete data isolation between tenants
 - Auto-tenant creation from webhook headers
 - Tenant selection UI with combined/individual views
 
-### ✅ Real-Time Data Ingestion
+###  Real-Time Data Ingestion
 - Shopify webhook integration for orders, customers, products
 - Automatic customer extraction from order data
 - Real-time dashboard updates
 
-### ✅ Comprehensive Dashboard
+###  Comprehensive Dashboard
 - Key metrics: Revenue, Orders, Customers, Products
 - Top customers by spending with calculated totals
 - Recent orders with filtering and customer information
 - Responsive design with professional UI
 
-### ✅ Data Filtering & Analytics
+###  Data Filtering & Analytics
 - Date range filtering (Last 7/30/90 days, All time)
 - Tenant-specific vs. combined data views
 - Real-time metric calculations
@@ -330,7 +330,7 @@ npx prisma generate
 
 For technical support or questions about the implementation, please refer to:
 - **Repository**: https://github.com/abhikumar0670/shopify-insights
-- **Live Demo**: https://frontend-qq49vrlvt-abhishek-kumars-projects-1de91d80.vercel.app
+- **Live Demo**: https://shopify-insights-eight.vercel.app/
 - **API Documentation**: Available via backend health endpoints
 
 *Last Updated: September 15, 2025*
