@@ -4,14 +4,14 @@ A modern, multi-tenant Shopify analytics dashboard built with Next.js and Node.j
 
 ---
 
-## 🚀 Live Demo & Credentials
+##  Live Demo & Credentials
 
 **Frontend (Dashboard):** https://shopify-insights-eight.vercel.app/  
 **Backend API:** https://shopify-insights-production.up.railway.app/
 
-### 🔐 Demo Login Credentials
+### Demo Login Credentials
 
-**📋 [View Complete Login Credentials →](./LOGIN-CREDENTIALS.md)**
+** [View Complete Login Credentials →](./LOGIN-CREDENTIALS.md)**
 
 *Quick Access Credentials:*
 
@@ -30,7 +30,7 @@ A modern, multi-tenant Shopify analytics dashboard built with Next.js and Node.j
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 - [Live Demo & Credentials](#-live-demo--credentials)
 - [Features](#-features)
 - [Tech Stack](#️-tech-stack)
@@ -43,7 +43,7 @@ A modern, multi-tenant Shopify analytics dashboard built with Next.js and Node.j
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Multi-Tenant Architecture**: Support for multiple Shopify stores with secure data separation  
 - **Role-Based Access Control**: 
@@ -53,7 +53,7 @@ A modern, multi-tenant Shopify analytics dashboard built with Next.js and Node.j
 - **Modern UI**: Clean, responsive interface built with Next.js and Tailwind CSS
 - **Secure Authentication**: JWT-based authentication with role-based permissions
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 **Frontend:**
 - Next.js 14 (App Router) + TypeScript
@@ -69,7 +69,7 @@ A modern, multi-tenant Shopify analytics dashboard built with Next.js and Node.j
 - Backend: Railway
 - Frontend: Vercel
 
-## 🛠️ Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 18+
@@ -101,7 +101,7 @@ npm install
 npm run dev
 ```
 
-## 🌐 Live Demo
+##  Live Demo
 
 - **Frontend**: https://shopify-insights-eight.vercel.app
 - **Backend API**: https://shopify-insights-production.up.railway.app
@@ -110,14 +110,14 @@ npm run dev
 - **Admin Login**: `abhi.admin@shopify-insights.com` / `admin123`
 - **Store Owner**: Enter store domain (e.g., `xeno-multi-tenant-demo.myshopify.com`)
 
-## 📊 Key Features
+##  Key Features
 
 - **Dashboard Analytics**: Revenue trends, customer insights, order tracking
 - **Multi-Store Management**: Secure tenant isolation with role-based access
 - **Real-Time Data**: Live webhook integration for up-to-date metrics
 - **Responsive Design**: Works seamlessly across desktop and mobile devices
 
-## 🔧 API Endpoints
+##  API Endpoints
 
 - `POST /api/auth/login` - Authentication
 - `GET /api/dashboard` - Dashboard metrics  
@@ -126,7 +126,7 @@ npm run dev
 - `GET /api/revenue-trend` - Revenue analytics
 - `GET /api/tenants` - Multi-tenant management (Admin only)
 
-## 🛡️ Security
+##  Security
 
 - JWT-based authentication
 - Role-based access control (Admin/Store Owner)
@@ -134,7 +134,7 @@ npm run dev
 - CORS protection
 - Input validation and sanitization
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -144,4 +144,4 @@ npm run dev
 
 ---
 
-**Built with ❤️ for modern e-commerce analytics**
+**Built for modern e-commerce analytics**
