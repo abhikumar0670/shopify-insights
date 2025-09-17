@@ -1,16 +1,16 @@
-# 🔐 Shopify Insights - Demo Login Credentials
+#  Shopify Insights - Demo Login Credentials
 
 Welcome to the Shopify Insights demo! Use the credentials below to explore different user roles and the multi-tenant architecture.
 
 ---
 
-## 🚀 Quick Access
+## Quick Access
 
 **Live Application:** [https://shopify-insights-eight.vercel.app/](https://shopify-insights-eight.vercel.app/)
 
 ---
 
-## 🔑 Demo Credentials
+##  Demo Credentials
 
 ### Admin Access
 - **Email:** `abhi.admin@shopify-insights.com`
@@ -42,7 +42,7 @@ Welcome to the Shopify Insights demo! Use the credentials below to explore diffe
 
 ---
 
-## 🎯 How to Test
+##  How to Test
 
 1. **Go to the login page:** [https://shopify-insights-eight.vercel.app/](https://shopify-insights-eight.vercel.app/)
 
@@ -58,7 +58,7 @@ Welcome to the Shopify Insights demo! Use the credentials below to explore diffe
 
 ---
 
-## 📊 What You'll See
+##  What You'll See
 
 **Admin Dashboard:**
 - Global revenue metrics across all stores
@@ -72,7 +72,7 @@ Welcome to the Shopify Insights demo! Use the credentials below to explore diffe
 
 ---
 
-## 🛡️ Security Note
+##  Security Note
 
 These are **demo credentials** for evaluation purposes only. Each role demonstrates different access levels in the multi-tenant architecture:
 
@@ -82,7 +82,7 @@ These are **demo credentials** for evaluation purposes only. Each role demonstra
 
 ---
 
-## 🔗 Links
+##  Links
 
 - **Main Repository:** [https://github.com/abhikumar0670/shopify-insights](https://github.com/abhikumar0670/shopify-insights)
 - **Live Application:** [https://shopify-insights-eight.vercel.app/](https://shopify-insights-eight.vercel.app/)
